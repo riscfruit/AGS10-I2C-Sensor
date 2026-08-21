@@ -830,6 +830,163 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Regulator_Linear:AP2127N-3.0"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -3.81 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "AP2127N-3.0"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+				(at 0 5.715 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2127.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "300mA low dropout linear regulator, shutdown pin, 2.5V-6V input voltage, 3.0V fixed positive output, SOT-23 package"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "linear regulator ldo fixed positive"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "AP2127N-3.0_0_1"
+				(rectangle
+					(start -5.08 1.905)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "AP2127N-3.0_1_1"
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "VO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "VI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "ags10:AGS10"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1238,6 +1395,12 @@
 		(uuid "53e277fe-7b2a-41b6-8adc-95d0def6705c")
 	)
 	(junction
+		(at 186.69 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "680de14e-5b77-4f1f-8877-b5c35386bdbe")
+	)
+	(junction
 		(at 190.5 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1245,7 +1408,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 115.57) (xy 190.5 115.57)
+			(xy 182.88 115.57) (xy 186.69 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1255,7 +1418,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 85.09) (xy 158.75 85.09)
+			(xy 165.1 57.15) (xy 161.29 57.15)
 		)
 		(stroke
 			(width 0)
@@ -1295,7 +1458,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 85.09) (xy 147.32 85.09)
+			(xy 153.67 57.15) (xy 149.86 57.15)
 		)
 		(stroke
 			(width 0)
@@ -1375,7 +1538,17 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 72.39) (xy 147.32 72.39)
+			(xy 186.69 115.57) (xy 190.5 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "416d7708-119d-4e21-bc14-b5927ccccc9b")
+	)
+	(wire
+		(pts
+			(xy 153.67 44.45) (xy 149.86 44.45)
 		)
 		(stroke
 			(width 0)
@@ -1435,6 +1608,16 @@
 	)
 	(wire
 		(pts
+			(xy 147.32 82.55) (xy 149.86 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9715d572-d6b0-43a4-98db-2c60c3e9f1fc")
+	)
+	(wire
+		(pts
 			(xy 193.04 68.58) (xy 193.04 69.85)
 		)
 		(stroke
@@ -1485,6 +1668,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 82.55) (xy 167.64 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c08cd3a8-665c-41d7-ae14-b3041837f38c")
+	)
+	(wire
+		(pts
 			(xy 160.02 100.33) (xy 163.83 100.33)
 		)
 		(stroke
@@ -1525,7 +1718,17 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 72.39) (xy 158.75 72.39)
+			(xy 186.69 115.57) (xy 186.69 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2d965df-e993-4d40-ae17-2cbd7c21dc7a")
+	)
+	(wire
+		(pts
+			(xy 165.1 44.45) (xy 161.29 44.45)
 		)
 		(stroke
 			(width 0)
@@ -1552,6 +1755,16 @@
 			(type default)
 		)
 		(uuid "f8b8dfd6-ebc6-4167-9ac5-7161193c7239")
+	)
+	(wire
+		(pts
+			(xy 157.48 72.39) (xy 157.48 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe726a37-9635-4f60-b977-ed87065ab3a5")
 	)
 	(wire
 		(pts
@@ -2387,7 +2600,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 186.69 116.84 180)
+		(at 165.1 44.45 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2395,9 +2608,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "0c7c48e4-75a5-4549-89c6-e08b6f292dde")
-		(property "Reference" "#PWR029"
-			(at 186.69 113.03 0)
+		(uuid "108439d0-78d9-4798-90a2-70a4b84468fe")
+		(property "Reference" "#PWR017"
+			(at 161.29 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2408,7 +2621,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 186.944 121.158 0)
+			(at 170.942 44.45 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2418,7 +2631,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 186.69 116.84 0)
+			(at 165.1 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2429,7 +2642,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 186.69 116.84 0)
+			(at 165.1 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2440,7 +2653,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 186.69 116.84 0)
+			(at 165.1 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2451,89 +2664,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "32238a73-b511-479b-93a7-ae2eb5deef57")
+			(uuid "f028a1e0-da5f-45fa-ae30-d06884594e43")
 		)
 		(instances
 			(project "AGS10-I2C-Sensor"
 				(path "/fa615d0e-1de7-4cd7-9c4c-b5841051a3d4"
-					(reference "#PWR029")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 186.69 48.26 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "10714458-7c1f-4e3d-9fa7-98566c4997ca")
-		(property "Reference" "#PWR013"
-			(at 186.69 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 186.436 43.942 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 186.69 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 186.69 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 186.69 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d1065c65-54bd-43ad-9de4-742c85695c87")
-		)
-		(instances
-			(project "AGS10-I2C-Sensor"
-				(path "/fa615d0e-1de7-4cd7-9c4c-b5841051a3d4"
-					(reference "#PWR013")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -2622,6 +2758,244 @@
 			(project "AGS10-I2C-Sensor"
 				(path "/fa615d0e-1de7-4cd7-9c4c-b5841051a3d4"
 					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 186.69 48.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1ea435c6-d091-4753-ac1c-0829e7a8f91c")
+		(property "Reference" "#PWR08"
+			(at 186.69 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 186.436 43.942 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 186.69 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 186.69 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "90b61b1f-72ef-47ef-ac4c-b5361082800b")
+		)
+		(instances
+			(project "AGS10-I2C-Sensor"
+				(path "/fa615d0e-1de7-4cd7-9c4c-b5841051a3d4"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 165.1 57.15 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "25f74584-fdea-4264-ba0a-83e8c25133d4")
+		(property "Reference" "#PWR010"
+			(at 161.29 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V"
+			(at 170.688 57.15 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 165.1 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b13efa46-71f7-4fa6-a357-9818db0f4190")
+		)
+		(instances
+			(project "AGS10-I2C-Sensor"
+				(path "/fa615d0e-1de7-4cd7-9c4c-b5841051a3d4"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:AP2127N-3.0")
+		(at 157.48 82.55 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "260a7dfc-96ff-44a6-ae1d-a68891a0643a")
+		(property "Reference" "U2"
+			(at 157.48 86.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "XC6206P302MR"
+			(at 157.48 88.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 157.48 88.265 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2127.pdf"
+			(at 157.48 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "300mA low dropout linear regulator, shutdown pin, 2.5V-6V input voltage, 3.0V fixed positive output, SOT-23 package"
+			(at 157.48 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "2539b6b1-bb49-4c4d-8e48-b072f5452cc6")
+		)
+		(pin "1"
+			(uuid "fa583ae8-5508-449c-a3e9-368ea4b5b7d3")
+		)
+		(pin "2"
+			(uuid "490e49ea-3fa6-412d-8aca-1b7efbfdb5a3")
+		)
+		(instances
+			(project "AGS10-I2C-Sensor"
+				(path "/fa615d0e-1de7-4cd7-9c4c-b5841051a3d4"
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -2717,7 +3091,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 154.94 72.39 270)
+		(at 157.48 44.45 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2727,7 +3101,7 @@
 		(dnp no)
 		(uuid "35879aa2-cb77-4b44-83e9-06720a33ad5d")
 		(property "Reference" "C2"
-			(at 154.94 75.946 90)
+			(at 157.48 48.006 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2737,7 +3111,7 @@
 			)
 		)
 		(property "Value" "4.7u"
-			(at 154.94 68.58 90)
+			(at 157.48 40.64 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2747,7 +3121,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 151.13 73.3552 0)
+			(at 153.67 45.4152 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2758,7 +3132,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 154.94 72.39 0)
+			(at 157.48 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2769,7 +3143,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 154.94 72.39 0)
+			(at 157.48 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2796,7 +3170,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 147.32 85.09 270)
+		(at 149.86 57.15 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2807,7 +3181,7 @@
 		(fields_autoplaced yes)
 		(uuid "38e652d7-4523-4589-9601-d19ec2e0dcd0")
 		(property "Reference" "#PWR03"
-			(at 140.97 85.09 0)
+			(at 143.51 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2818,7 +3192,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 143.51 85.0901 90)
+			(at 146.05 57.1501 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2829,7 +3203,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 147.32 85.09 0)
+			(at 149.86 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2840,7 +3214,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 85.09 0)
+			(at 149.86 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2851,7 +3225,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 147.32 85.09 0)
+			(at 149.86 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2868,6 +3242,82 @@
 			(project "AGS10-I2C-Sensor"
 				(path "/fa615d0e-1de7-4cd7-9c4c-b5841051a3d4"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 157.48 72.39 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "39662499-cee0-4959-83d5-d31828886beb")
+		(property "Reference" "#PWR024"
+			(at 157.48 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 157.48 68.072 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.48 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 157.48 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cfc5b25c-77da-4b6d-a922-1942430556fa")
+		)
+		(instances
+			(project "AGS10-I2C-Sensor"
+				(path "/fa615d0e-1de7-4cd7-9c4c-b5841051a3d4"
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -2944,6 +3394,160 @@
 			(project "AGS10-I2C-Sensor"
 				(path "/fa615d0e-1de7-4cd7-9c4c-b5841051a3d4"
 					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 167.64 82.55 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "51e28fc7-a82c-409c-bda5-d139fdc40941")
+		(property "Reference" "#PWR014"
+			(at 163.83 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 173.482 82.55 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 167.64 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 167.64 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c90b3d94-b2d3-4dd6-887e-de9d84dac600")
+		)
+		(instances
+			(project "AGS10-I2C-Sensor"
+				(path "/fa615d0e-1de7-4cd7-9c4c-b5841051a3d4"
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 186.69 68.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "53d599d1-1374-46df-8b25-55778ca0c7d3")
+		(property "Reference" "#PWR011"
+			(at 186.69 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 186.436 64.262 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 186.69 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 186.69 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3ef04e41-bfa4-4d7c-8532-b1f51e6946cd")
+		)
+		(instances
+			(project "AGS10-I2C-Sensor"
+				(path "/fa615d0e-1de7-4cd7-9c4c-b5841051a3d4"
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -3036,6 +3640,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 186.69 118.11 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "68a4bb49-942d-4a32-a66d-ecc7b100c268")
+		(property "Reference" "#PWR016"
+			(at 186.69 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V"
+			(at 186.69 123.698 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 186.69 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 186.69 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c6c3ffac-9638-4c6f-a39e-5088cab65f60")
+		)
+		(instances
+			(project "AGS10-I2C-Sensor"
+				(path "/fa615d0e-1de7-4cd7-9c4c-b5841051a3d4"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 193.04 96.52 180)
 		(unit 1)
@@ -3106,83 +3787,6 @@
 			(project "AGS10-I2C-Sensor"
 				(path "/fa615d0e-1de7-4cd7-9c4c-b5841051a3d4"
 					(reference "#PWR020")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 162.56 72.39 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "74fb740a-38ed-466f-9a6e-bdb3dc2ad518")
-		(property "Reference" "#PWR010"
-			(at 158.75 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 168.656 72.39 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 162.56 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 162.56 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 162.56 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "aa8e3797-7cbd-4e0d-b997-1e7a4b56a63b")
-		)
-		(instances
-			(project "AGS10-I2C-Sensor"
-				(path "/fa615d0e-1de7-4cd7-9c4c-b5841051a3d4"
-					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -3344,6 +3948,83 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
+		(at 139.7 105.41 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a5b26a00-f0db-4215-8378-6ddd60bec102")
+		(property "Reference" "#PWR015"
+			(at 143.51 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V"
+			(at 134.112 105.41 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 139.7 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 139.7 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "322f0520-7e44-42ae-b512-dbb6c5c0fb9e")
+		)
+		(instances
+			(project "AGS10-I2C-Sensor"
+				(path "/fa615d0e-1de7-4cd7-9c4c-b5841051a3d4"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
 		(at 186.69 96.52 0)
 		(unit 1)
 		(body_style 1)
@@ -3420,83 +4101,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 139.7 105.41 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c3a7f59f-2bdc-494f-827b-b6fe4ec2a88d")
-		(property "Reference" "#PWR08"
-			(at 143.51 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 133.858 105.41 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 139.7 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 139.7 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 139.7 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c049339b-8a6b-4884-99f9-804b9cd901da")
-		)
-		(instances
-			(project "AGS10-I2C-Sensor"
-				(path "/fa615d0e-1de7-4cd7-9c4c-b5841051a3d4"
-					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 140.97 99.06 180)
 		(unit 1)
@@ -3567,83 +4171,6 @@
 			(project "AGS10-I2C-Sensor"
 				(path "/fa615d0e-1de7-4cd7-9c4c-b5841051a3d4"
 					(reference "#PWR021")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 186.69 68.58 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c459ad66-b394-4270-9b41-8d5e4f2aad1f")
-		(property "Reference" "#PWR012"
-			(at 186.69 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 186.436 64.262 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 186.69 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 186.69 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 186.69 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f3778736-04ef-4b48-84a2-edbf02067abb")
-		)
-		(instances
-			(project "AGS10-I2C-Sensor"
-				(path "/fa615d0e-1de7-4cd7-9c4c-b5841051a3d4"
-					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -3729,7 +4256,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 147.32 72.39 270)
+		(at 149.86 44.45 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3740,7 +4267,7 @@
 		(fields_autoplaced yes)
 		(uuid "dc87bf17-e0ff-4219-8066-2b53f5c9767d")
 		(property "Reference" "#PWR02"
-			(at 140.97 72.39 0)
+			(at 143.51 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3751,7 +4278,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 143.51 72.3901 90)
+			(at 146.05 44.4501 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3762,7 +4289,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 147.32 72.39 0)
+			(at 149.86 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3773,7 +4300,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 72.39 0)
+			(at 149.86 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3784,7 +4311,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 147.32 72.39 0)
+			(at 149.86 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3807,85 +4334,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 162.56 85.09 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e130eb40-13a5-420c-861a-826d58cb7d66")
-		(property "Reference" "#PWR011"
-			(at 158.75 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 168.656 85.09 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 162.56 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 162.56 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 162.56 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "fab0254f-dc21-4aea-8558-0478235ef869")
-		)
-		(instances
-			(project "AGS10-I2C-Sensor"
-				(path "/fa615d0e-1de7-4cd7-9c4c-b5841051a3d4"
-					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
-		(at 154.94 85.09 270)
+		(at 157.48 57.15 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3895,7 +4345,7 @@
 		(dnp no)
 		(uuid "f53ce44a-516a-4d40-9568-e5cffd07a709")
 		(property "Reference" "C3"
-			(at 154.94 88.646 90)
+			(at 157.48 60.706 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3905,7 +4355,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 154.94 81.28 90)
+			(at 157.48 53.34 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3915,7 +4365,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 151.13 86.0552 0)
+			(at 153.67 58.1152 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3926,7 +4376,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 154.94 85.09 0)
+			(at 157.48 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3937,7 +4387,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 154.94 85.09 0)
+			(at 157.48 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4045,6 +4495,83 @@
 			(project "AGS10-I2C-Sensor"
 				(path "/fa615d0e-1de7-4cd7-9c4c-b5841051a3d4"
 					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 147.32 82.55 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fa320b5e-5c76-4027-89c6-70abb83ed032")
+		(property "Reference" "#PWR09"
+			(at 151.13 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V"
+			(at 141.732 82.55 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 147.32 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 147.32 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7bf71380-9258-4ea5-bc8f-8aacdbee90ce")
+		)
+		(instances
+			(project "AGS10-I2C-Sensor"
+				(path "/fa615d0e-1de7-4cd7-9c4c-b5841051a3d4"
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
